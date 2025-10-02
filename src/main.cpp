@@ -14,18 +14,15 @@ int main(){
     std::string* firstName = new std::string();
     std::string* lastName = new std::string();
 
-    cout << "Enter full name: ";
-    std::getline(std::cin, name);
-
-    cout << "Enter email address: ";
-    std::getline(std::cin, email);
+    getline(cin, name);
+    getline(cin, email);
 
     string username = getUsername(email);
     parseName(name, firstName, lastName);
 
-    cout << *firstName << endl;
-    cout << *lastName << endl;
-    cout << username << endl;
+    cout << "First Name: " << *firstName << endl;
+    cout << "Last Name: " << *lastName << endl;
+    cout << "Username: " << username << endl;
 
     delete firstName;
     delete lastName;

@@ -1,5 +1,5 @@
 #include <iostream>
-#include "/Users/henry2112/Desktop/cse3150/labs/lab 1/include/parser.h"
+#include "parser.h"
 using std::cout;
 using std::string;
 using std::cin;
